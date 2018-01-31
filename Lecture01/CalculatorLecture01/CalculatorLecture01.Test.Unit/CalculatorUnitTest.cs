@@ -11,6 +11,8 @@ namespace CalculatorLecture01.Test.Unit
     [TestFixture]
     public class CalculatorUnitTest
     {
+        
+
         [Test]
         public void Add_Add2And4_Returns6()
         {
@@ -69,6 +71,7 @@ namespace CalculatorLecture01.Test.Unit
             var utt = new Calculator();
 
             Assert.That(utt.Add(a, b), Is.EqualTo(expected));
+            
         }
     }
 
