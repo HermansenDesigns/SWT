@@ -26,7 +26,7 @@ namespace CalculatorLecture01.Test.Unit
         {
             var utt = new Calculator();
 
-            Assert.That(utt.Add(-2, 4), Is.EqualTo(2));
+            Assert.That(utt.Add(-2, 4), Is.EqualTo(3)); //2
         }
 
         [Test]
