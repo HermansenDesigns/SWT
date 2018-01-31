@@ -4,19 +4,19 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Building..'
-        bat 'dotnet build'
+        bat 'dotnet build Lecture01\\Calculator'
       }
     }
     stage('Test') {
       steps {
         echo 'Testing..'
-        bat 'dotnet test'
+        bat 'dotnet test Lecture01\\Calculator'
       }
     }
     stage('Deploy') {
       steps {
         echo 'Deploying....'
-        bat 'dotnet package'
+        bat 'dotnet package Lecture01\\Calculator'
       }
     }
   }
